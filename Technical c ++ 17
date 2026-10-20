@@ -1,0 +1,26 @@
+Q3. What is the difference between if, if-else, and if-else-if statements? Explain each with a suitable example.
+
+
+Answer:
+if: Executes code when a condition is true.
+if-else: Selects between two blocks of code.
+if-else-if: Checks multiple conditions one by one.
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int marks = 80;
+
+    if (marks >= 90) {
+        cout << "Grade A+";
+    }
+    else if (marks >= 60) {
+        cout << "Pass";
+    }
+    else {
+        cout << "Fail";
+    }
+
+    return 0;
+}
