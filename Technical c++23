@@ -1,0 +1,23 @@
+Q10. Write a C++ program to input a person's age and check whether the person is eligible to vote. A person must be 18 years or older.
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int age;
+
+    cout << "Enter your age: ";
+    cin >> age;
+
+    if (age >= 18) {
+        cout << "Eligible to vote";
+    }
+    else if (age >= 0) {
+        cout << "Not eligible to vote";
+    }
+    else {
+        cout << "Invalid age";
+    }
+
+    return 0;
+}
