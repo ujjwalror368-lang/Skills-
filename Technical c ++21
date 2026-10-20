@@ -1,0 +1,37 @@
+Q7. Write a C++ program to input a student's marks and display the grade according to the given criteria.
+90–100 → Grade A
+75–89 → Grade B
+60–74 → Grade C
+40–59 → Grade D
+Below 40 → Fail
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int marks;
+
+    cout << "Enter marks: ";
+    cin >> marks;
+
+    if (marks < 0 || marks > 100) {
+        cout << "Invalid marks";
+    }
+    else if (marks >= 90) {
+        cout << "Grade A";
+    }
+    else if (marks >= 75) {
+        cout << "Grade B";
+    }
+    else if (marks >= 60) {
+        cout << "Grade C";
+    }
+    else if (marks >= 40) {
+        cout << "Grade D";
+    }
+    else {
+        cout << "Fail";
+    }
+
+    return 0;
+}
