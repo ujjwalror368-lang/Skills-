@@ -1,0 +1,20 @@
+Q4. What is a nested if statement? Explain its working with a suitable example.
+
+
+Answer: A nested if statement means placing one if statement inside another if statement. It is used when a second condition must be checked after the first condition is true.
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int age = 20;
+    int marks = 70;
+
+    if (age >= 18) {
+        if (marks >= 40) {
+            cout << "Eligible";
+        }
+    }
+
+    return 0;
+}
