@@ -1,0 +1,15 @@
+Q2. Explain the if statement in C++. Write its syntax and explain its working with an example.
+
+Answer: The if statement executes a block of code only when the given condition is true.
+#include <iostream>
+using namespace std;
+
+int main() {
+    int num = 10;
+
+    if (num > 0) {
+        cout << "Positive number";
+    }
+
+    return 0;
+}
