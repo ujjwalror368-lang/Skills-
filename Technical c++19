@@ -1,0 +1,26 @@
+Q5. What is the switch statement in C++? Explain the purpose of case, break, and default with an example.
+
+Answer: The switch statement is used to select one block of code from multiple options.
+case: Specifies a possible value.
+break: Stops execution of the switch block.
+default: Executes when no case matches.
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int day = 2;
+
+    switch (day) {
+        case 1:
+            cout << "Monday";
+            break;
+        case 2:
+            cout << "Tuesday";
+            break;
+        default:
+            cout << "Invalid day";
+    }
+
+    return 0;
+}
