@@ -1,0 +1,28 @@
+Q12. Write a C++ program using a nested if statement to check whether a student is eligible for an examination. The student must have attendance ≥ 75% and marks in the internal examination ≥ 40%.
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    float attendance, marks;
+
+    cout << "Enter attendance percentage: ";
+    cin >> attendance;
+
+    cout << "Enter internal marks percentage: ";
+    cin >> marks;
+
+    if (attendance >= 75) {
+        if (marks >= 40) {
+            cout << "Eligible for examination";
+        }
+        else {
+            cout << "Not eligible: Low internal marks";
+        }
+    }
+    else {
+        cout << "Not eligible: Low attendance";
+    }
+
+    return 0;
+}
